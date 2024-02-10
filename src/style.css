@@ -1,0 +1,137 @@
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg-1.jpg);
+    max-width: 100%;
+    margin-top: 8em;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#texto-login {
+
+    font-family: lato, sans-serif;
+    font-size: 35px;
+    color: indigo;
+    
+
+}
+
+#campoPrincipal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.logoLogin {
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 10em;
+
+}
+
+.texto-login {
+    font-size: 2em;
+
+}
+
+.controleLabels,
+input {
+
+
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.btn {
+    background-color: indigo;
+}
+
+.forget {
+    margin-top: 1.25em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.forget,
+a {
+    margin-top: 20px;
+    font-size: 0.98em;
+    color: rgb(246, 246, 4);
+
+
+}
+
+
+#controleTamanho {
+    border: 0.3em solid #6710f284;
+    /* Cor indigo */
+    background-color: rgba(244, 241, 247, 0.2);
+    /* Cor branca com 50% de transparência */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    /* Largura do contêiner */
+    margin: auto;
+    /* Centralizar o contêiner na tela */
+    box-shadow: 0px 0px 24px 0px rgba(135, 1, 252, 0.4);
+    /* Sombra */
+
+}
+
+/* Estilos adicionais para o conteúdo dentro do contêiner translúcido */
+.content {
+    color: #333;
+    /* Cor do texto */
+}
+
+.btn-entrar {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Cor branca com 80% de transparência */
+    color: #333;
+    /* Cor do texto */
+    border: 1px solid #333;
+    /* Adicione uma borda sólida */
+    border-radius: 5px;
+    /* Adicione uma borda arredondada */
+    font-weight: bold;
+    /* Adicione negrito ao texto */
+}
+
+.btn-entrar:hover {
+    background-color: rgba(83, 0, 156, 0.92);
+    /* Altere a cor de fundo no hover */
+    color: #fff;
+    /* Altere a cor do texto no hover */
+}
+
+.texto-forget:hover {
+    text-decoration: underline;
+    /* Adicione sublinhado no hover */
+}
+.form-floating label {
+    text-shadow: 2px 1px 4px rgba(111, 0, 246, 15); /* Deslocamento horizontal, deslocamento vertical, desfoque, cor da sombra */
+}
+
+.form-floating input {
+    width: 100%;
+    border: solid  #6710f284 0.13em;
+}
+
+.form-check-input{
+    width: 50%;
+}
