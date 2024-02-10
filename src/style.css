@@ -5,22 +5,32 @@ body * {
 
 body {
     background-image: url(bg-1.jpg);
+
     max-width: 100%;
     margin-top: 8em;
     justify-content: center;
     align-items: center;
+    background-color: rgba(244, 241, 247, 2);
 
 
 }
 
 #texto-login {
-
-    font-family: lato, sans-serif;
-    font-size: 35px;
-    color: indigo;
-    
-
+    background: linear-gradient(to right, rgb(0, 200, 255), rgb(1, 255, 94));
+    /* Aplicar gradiente de indigo a indianred */
+    -webkit-background-clip: text;
+    /* Aplicar gradiente apenas ao texto */
+    background-clip: text;
+    /* Aplicar gradiente apenas ao texto */
+    color: transparent;
+    /* Tornar o texto transparente para permitir a visualização do gradiente */
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    /* Garante que o gradient seja aplicado ao texto corretamente */
 }
+
+
 
 #campoPrincipal {
 
@@ -32,6 +42,8 @@ body {
 }
 
 .logoLogin {
+
+    box-shadow: 0px 0px 12px 1px rgb(0, 0, 0);
 
     justify-content: center;
     align-items: center;
@@ -48,11 +60,9 @@ body {
 .controleLabels,
 input {
 
-
     justify-content: center;
     width: 100%;
     align-items: center;
-
 
 }
 
@@ -60,38 +70,48 @@ input {
     background-color: indigo;
 }
 
-.forget {
-    margin-top: 1.25em;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .forget,
-a {
-    margin-top: 20px;
+a :hover {
+
     font-size: 0.98em;
-    color: rgb(246, 246, 4);
+}
+
+#escolha {
+
+    font-size: 1em;
+}
+
+#escolha,
+a {
+    color: white;
+}
+
+
+#escola,
+a:hover {
+    color: yellow;
 
 
 }
-
 
 #controleTamanho {
-    border: 0.3em solid #6710f284;
     /* Cor indigo */
-    background-color: rgba(244, 241, 247, 0.2);
+    background: linear-gradient(to right, indianred, indigo);
     /* Cor branca com 50% de transparência */
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     width: 50%;
     /* Largura do contêiner */
     margin: auto;
     /* Centralizar o contêiner na tela */
-    box-shadow: 0px 0px 24px 0px rgba(135, 1, 252, 0.4);
-    /* Sombra */
-
+    box-shadow: 0px 0px 24px 7px rgba(255, 254, 254, 0.5),
+        2px 0px 1px 1px white inset,
+        /* Sombra vermelha para a direita */
+        -2px 0px 1px 1px white inset;
+    /* Sombra azul para a esquerda */
 }
+
+
+
 
 /* Estilos adicionais para o conteúdo dentro do contêiner translúcido */
 .content {
@@ -112,10 +132,11 @@ a {
     /* Adicione negrito ao texto */
 }
 
+
 .btn-entrar:hover {
-    background-color: rgba(83, 0, 156, 0.92);
+    background-color: indigo;
     /* Altere a cor de fundo no hover */
-    color: #fff;
+    color: white;
     /* Altere a cor do texto no hover */
 }
 
@@ -123,15 +144,21 @@ a {
     text-decoration: underline;
     /* Adicione sublinhado no hover */
 }
+
 .form-floating label {
-    text-shadow: 2px 1px 4px rgba(111, 0, 246, 15); /* Deslocamento horizontal, deslocamento vertical, desfoque, cor da sombra */
+    text-shadow: 2px 1px 4px rgb(0, 0, 0);
+    /* Deslocamento horizontal, deslocamento vertical, desfoque, cor da sombra */
 }
 
 .form-floating input {
     width: 100%;
-    border: solid  #6710f284 0.13em;
+    border: solid white 0.13em;
 }
 
-.form-check-input{
+.form-check-input {
     width: 50%;
+}
+
+a {
+    color: chartreuse
 }
