@@ -99,7 +99,7 @@ a:hover {
     background: linear-gradient(to right, indianred, indigo);
     /* Cor branca com 50% de transparência */
     border-radius: 50px;
-    width: 50%;
+    width: 100%;
     /* Largura do contêiner */
     margin: auto;
     /* Centralizar o contêiner na tela */
